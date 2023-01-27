@@ -8,5 +8,5 @@ interface Token {
     function transferFrom(address _from, address _to, uint256 _value) external returns (bool success);
     function approve(address _spender, uint256 _value) external returns (bool success);
     function allowance(address _owner, address _spender) external returns (uint256 remaining);
-    function transferEthToOwner(uint256 _amount) external returns (bool success);
+    function transferEthToOwner(uint256 _amount) external payable returns (bool success);
 }

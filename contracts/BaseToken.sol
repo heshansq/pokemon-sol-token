@@ -2,6 +2,7 @@
 pragma solidity ^0.8.7;
 
 import "./Token.sol";
+import "hardhat/console.sol";
 
 contract BaseToken is Token {
 
@@ -19,7 +20,7 @@ contract BaseToken is Token {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
     constructor() {
-        totalSupplyVal = 10 ether;
+        totalSupplyVal = 100 ether;
         fundsWallet = payable(msg.sender);
         balances[fundsWallet] = totalSupplyVal;
         name = "PokemonTD";
@@ -49,7 +50,9 @@ contract BaseToken is Token {
         return totalSupplyVal;
     }
 
-    function transferEthToOwner(uint256 _amount) public override returns (bool success) {
+    function transferEthToOwner(uint256 _amount) public payable override returns (bool success) {
+        console.log("_amount:", _amount);
+        console.log("fundsWallet:", fundsWallet);
         fundsWallet.transfer(_amount);
         return true;
     }
@@ -70,7 +73,6 @@ contract BaseToken is Token {
     }
 
     function balanceOf(address _owner) public view override returns(uint256 _balance) {
-        require(_owner == msg.sender, "You need to be the owner to query balance");
         return balances[_owner];
     }
 
