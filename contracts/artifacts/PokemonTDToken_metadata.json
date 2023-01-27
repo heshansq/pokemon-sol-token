@@ -1,0 +1,126 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Bought",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Sold",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "buy",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sell",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract Token",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PokemonTDToken.sol": "PokemonTDToken"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BaseToken.sol": {
+			"keccak256": "0x88a019eb22c86e7bdebfd813dac9fe567c194af3d8a7d833fe51fced56e4300f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://676bcec0279765cec23ac0af8334defe354005e01c42799a9941a4588a234dc8",
+				"dweb:/ipfs/QmXMTkMwJ5x7podFgB5W8wNDpNAJMCXgMEN3f6vCj82gYE"
+			]
+		},
+		"contracts/PokemonTDToken.sol": {
+			"keccak256": "0xbcaa5e7558e6badb3ab2ba883f1e7d65e602baec5e3b8cc18e2cd7f8a4afb304",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://78cc916d340ea5e3615789ac975d62486cb199403b376aff68f7e402940852bb",
+				"dweb:/ipfs/QmX58AG43JW6WabTGSTfXFyhqMWnevJYiGQqnkUsCmGoyu"
+			]
+		},
+		"contracts/Token.sol": {
+			"keccak256": "0xda94b88a7e2f21bb930dfdf7bed26e45b97ded78b57dc00cab670cc304913b6d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5d931df31c940ae929c766f9d9a49e906d74947b8f8d35150e45e47be4b95c37",
+				"dweb:/ipfs/QmTyfWqpAxPbdxGbsehHKsYuFnwTpSXYDsFaG91Xr8mUcn"
+			]
+		}
+	},
+	"version": 1
+}
