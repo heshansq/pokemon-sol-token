@@ -298,11 +298,7 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"transfer(address,uint256)": {
-					"notice": "function approveAndCall(address _spender, uint256 _value, bytes memory _extraData) public returns(bool success) { allowed[msg.sender][_spender] = _value; emit Approval(msg.sender, _spender, _value); //if(!_spender.call(bytes4(bytes32(sha3(\"receiveApproval(address,uint256,address,bytes)\"))), msg.sender, _value, this, _extraData)) { throw; } return true; }"
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
@@ -323,11 +319,11 @@
 	},
 	"sources": {
 		"contracts/BaseToken.sol": {
-			"keccak256": "0x638ce73d19dd880f961f36163804e0f4bde420392d237c636cf1dce616eca69b",
+			"keccak256": "0x312806a4b2b1a4c2154712ee123cd450ddc36f7415c36360d0fe13ddc02a101d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2da14e4994c34a72788f3a1c7233a4d27209c264ae55d53fd6dcaa9cee3ac755",
-				"dweb:/ipfs/QmeCRYQsvhqQrnXHWH3o8tRpMMYpjwfGXaGenw3fhWAfB6"
+				"bzz-raw://d71ad3a13be5a4d6b051afac21c813d50d51f70fe2575618cb56f2e505c331e5",
+				"dweb:/ipfs/QmcHmSmWKRwabbXUWdvhFCJJEJD2FD642USAQ6TQ5PmzQF"
 			]
 		},
 		"contracts/Token.sol": {

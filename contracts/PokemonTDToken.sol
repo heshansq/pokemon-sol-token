@@ -13,7 +13,6 @@ contract PokemonTDToken {
 
     event Bought(uint256 amount);
     event Sold(uint256 amount);
-    ReturnOption returnOption;
 
     constructor() {
         token = new BaseToken();
@@ -22,6 +21,9 @@ contract PokemonTDToken {
         ownerWalletN = msg.sender;
     }
 
+    /*
+    * Buy Tokens from original wallet
+    */
     function buy() payable public {
         uint256 amountBuy = msg.value;
         uint256 pkBalance = token.balanceOf(address(this));
@@ -36,6 +38,9 @@ contract PokemonTDToken {
         emit Bought(amountBuyTokenSize);
     }
 
+    /*
+    * Sell Tokens from owner to original wallet
+    */
     function sell(uint256 _amount) payable public {
         require(_amount > 0, "You need to mention PokemonTD amount");
         uint256 allowance = token.allowance(msg.sender, address(this));
@@ -45,11 +50,10 @@ contract PokemonTDToken {
         emit Sold(_amount / uintOfEthCanBuy);
     }
 
-    struct ReturnOption {
-        uint256 amount;
-        uint256 balance;
-    }
-
+    /*
+    * Transfer a token to winner. If looser dont have tokens, the token will be transferred from the 
+    * original wallet
+    */
     function transferSingleTokenToWinner(address _to, address _from, uint256 _amount) public returns(bool success) {
         require(_amount > 0, "You need to mention PokemonTD amount");
 
@@ -63,13 +67,17 @@ contract PokemonTDToken {
         return true;
     }
 
+    /*
+    * get balance of original wallet
+    */
     function getAmountCheck() payable public returns(uint256 amount) {
         uint256 pkBalance = token.balanceOf(address(this));
-
-        //returnOption = ReturnOption({balance:pkBalance, amount:msg.value });
         return pkBalance;
     }
 
+    /*
+    * get balance of current user
+    */
     function currentBalance() public returns(uint256 balance) {
         return token.balanceOf(msg.sender);
     }

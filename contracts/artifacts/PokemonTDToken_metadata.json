@@ -161,11 +161,11 @@
 			]
 		},
 		"contracts/PokemonTDToken.sol": {
-			"keccak256": "0x8b688c37aa98b7a3af8c5d189175b26fd8160c4522701149b6bf6a81dd768939",
+			"keccak256": "0xbd1d3cba6756c2c0cfc22648417a13ed70717d6c64a07ebb14cadb550df02e4c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2cc271f842fe6859ab36400cc8fbb071fb6ceaa48c91b1dd035a92baec3264a9",
-				"dweb:/ipfs/QmWcVCCgr1ER6Wb2A6QVdt6AosPPUHoKU8hCETTCs7XjAr"
+				"bzz-raw://cb3ad82e4c758a5883832c89ed3e13b8e2243795799af76c7c2d3c25b094b6fb",
+				"dweb:/ipfs/QmVpinHLGgjFN7Y2VYc9rABASuNBpN5DDiR88FLD54nucL"
 			]
 		},
 		"contracts/Token.sol": {
