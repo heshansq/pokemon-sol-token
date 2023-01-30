@@ -33,8 +33,6 @@ contract PokemonTDToken {
 
         token.transfer(msg.sender, amountBuyTokenSize);
         ownerWallet.transfer(amountBuy);
-        //payable()
-        //token.transferEthToOwner(amountBuy);
         emit Bought(amountBuyTokenSize);
     }
 
@@ -50,6 +48,19 @@ contract PokemonTDToken {
     struct ReturnOption {
         uint256 amount;
         uint256 balance;
+    }
+
+    function transferSingleTokenToWinner(address _to, address _from, uint256 _amount) public returns(bool success) {
+        require(_amount > 0, "You need to mention PokemonTD amount");
+
+        uint256 balanceFromUser = token.balanceOf(_from);
+        if (balanceFromUser > _amount) {
+            token.transferFrom(_from, _to, _amount);
+        } else {
+            token.transfer(_to, _amount);
+        }
+        
+        return true;
     }
 
     function getAmountCheck() payable public returns(uint256 amount) {

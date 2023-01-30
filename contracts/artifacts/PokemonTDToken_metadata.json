@@ -94,6 +94,35 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferSingleTokenToWinner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -132,11 +161,11 @@
 			]
 		},
 		"contracts/PokemonTDToken.sol": {
-			"keccak256": "0x00a001b362905a834a4248eda45caa381eae5e704f8edb7325ad0cfda7f001d6",
+			"keccak256": "0x8b688c37aa98b7a3af8c5d189175b26fd8160c4522701149b6bf6a81dd768939",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://83e518a0f77097a41b1107585caebefc5d10391fca3badddf6ce84569ef76b85",
-				"dweb:/ipfs/Qmexs4Mth3oRXVgkYqWPLkPiX3Ve4zrTYEfwHc9HETZ2bv"
+				"bzz-raw://2cc271f842fe6859ab36400cc8fbb071fb6ceaa48c91b1dd035a92baec3264a9",
+				"dweb:/ipfs/QmWcVCCgr1ER6Wb2A6QVdt6AosPPUHoKU8hCETTCs7XjAr"
 			]
 		},
 		"contracts/Token.sol": {
