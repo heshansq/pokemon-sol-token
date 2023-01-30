@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
+/*
+* Base ERC-20 Token Standard Interface
+*/
 interface Token {
     function totalSupply() external returns (uint256 supply);
     function balanceOf(address _owner) external returns (uint256 balance);
