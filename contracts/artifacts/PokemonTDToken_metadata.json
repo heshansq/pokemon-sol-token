@@ -79,7 +79,7 @@
 				],
 				"name": "sell",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -124,19 +124,19 @@
 	},
 	"sources": {
 		"contracts/BaseToken.sol": {
-			"keccak256": "0xf832b1c4b699633741d5f351e84d42193389dc6334ae5ea1cc188cb2a69284fc",
+			"keccak256": "0x638ce73d19dd880f961f36163804e0f4bde420392d237c636cf1dce616eca69b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://301538c3f8d9369b7b0d6763a59237f6a091ca15e3c67b48cd73ef55d28dbe88",
-				"dweb:/ipfs/QmTsUQeB7bbNedBmhaDFvd3ao6HCx3AqHdfwZnUhAbQjky"
+				"bzz-raw://2da14e4994c34a72788f3a1c7233a4d27209c264ae55d53fd6dcaa9cee3ac755",
+				"dweb:/ipfs/QmeCRYQsvhqQrnXHWH3o8tRpMMYpjwfGXaGenw3fhWAfB6"
 			]
 		},
 		"contracts/PokemonTDToken.sol": {
-			"keccak256": "0xdb5b4057e20532ee8408e70c5006dcee450f66f39d77e1140d90986db3b2bb6d",
+			"keccak256": "0x00a001b362905a834a4248eda45caa381eae5e704f8edb7325ad0cfda7f001d6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://77d4814854f364cdef51ab4f699403f944f08aba8fb1a0e1847d0e51df1067a0",
-				"dweb:/ipfs/QmWQEnrvw6tXqqveqfLJyKwpMES3DdeLUx5tK2sW6xX29c"
+				"bzz-raw://83e518a0f77097a41b1107585caebefc5d10391fca3badddf6ce84569ef76b85",
+				"dweb:/ipfs/Qmexs4Mth3oRXVgkYqWPLkPiX3Ve4zrTYEfwHc9HETZ2bv"
 			]
 		},
 		"contracts/Token.sol": {

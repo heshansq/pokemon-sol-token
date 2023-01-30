@@ -42,6 +42,7 @@ contract BaseToken is Token {
         require(balances[msg.sender] >= _value ,"sender value needs to be higher than sending value");
         balances[msg.sender] -= _value;
         balances[_to] += _value;
+        allowed[_to][msg.sender] += _value;
         emit Transfer(msg.sender, _to, _value);
         return true;
     }
@@ -61,6 +62,10 @@ contract BaseToken is Token {
         require(_value > 0, "value is lower than 1, you cant transfer");
         require(balances[_from] >= _value ,"sender value needs to be higher than sending value");
         require(allowed[_from][msg.sender] >= _value, "allowed value criteria never met");
+
+        console.log("Value comes here::", _value);
+        console.log("From Balance Coming Here:: ", balances[_from]);
+        console.log("To Balance Coming Here:: ", balances[_to]);
 
         balances[_to] += _value;
         balances[_from] -= _value;
