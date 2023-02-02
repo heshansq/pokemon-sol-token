@@ -16,7 +16,7 @@ contract PokemonTDToken {
 
     constructor() {
         token = new BaseToken();
-        uintOfEthCanBuy = 1000;
+        uintOfEthCanBuy = 10000;
         ownerWallet = payable(msg.sender);
         ownerWalletN = msg.sender;
     }

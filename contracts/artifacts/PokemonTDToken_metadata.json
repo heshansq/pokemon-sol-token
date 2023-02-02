@@ -341,19 +341,19 @@
 	},
 	"sources": {
 		"contracts/BaseToken.sol": {
-			"keccak256": "0xa5d00a87d428bcd306a022efff929059e581e45c70645a186f8a2395e43c3121",
+			"keccak256": "0x2279e9cbe811a47e03a4fefa217b3e647e269fec76002f58b4da240503208259",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3b15d68c1c273e72e6d36a4f200ab0753563ba7bcad1167c3480e6800e51d8aa",
-				"dweb:/ipfs/QmXhHK85KyAfGLyLkd3ScyEWF7bAm9k6GopFbNatgaDEP7"
+				"bzz-raw://76d3a74379335190ebeb08d66098deecf38b08005f218f33b830ce86bd696c79",
+				"dweb:/ipfs/QmZjYXaVMu8wC5tEBhGLbAJTHgQkup96zasondwNdxap2d"
 			]
 		},
 		"contracts/PokemonTDToken.sol": {
-			"keccak256": "0x8fb8a4761320b126190dca43999ef3dd2596a245428c6bd69eae230d1080d183",
+			"keccak256": "0xe744750ff7d5a9fdceaf8fe056fbb20a1875d453bb1829adf660d5a58f5eadda",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c66f04cfc621fe0eac363aa9f5ed978ba42c683af801a562d2dbf2906180334f",
-				"dweb:/ipfs/QmUwkkd8ugqGvTWrsek1Q7TmaW5XB3oZ8jTRAAxHLjwCUk"
+				"bzz-raw://1ec7d19525bb9a1ece96fc4b83f140fd43c03a09f90a6447b3df088bbd23bfb6",
+				"dweb:/ipfs/QmaZ48uVseJXP8h1qRrzeTitigmfNfoHBm2bhW55aAXuij"
 			]
 		},
 		"contracts/Token.sol": {
