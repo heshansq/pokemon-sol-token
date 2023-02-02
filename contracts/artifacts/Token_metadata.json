@@ -57,6 +57,35 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approveSpender",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "_owner",
 						"type": "address"
 					}
@@ -70,6 +99,45 @@
 					}
 				],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -156,6 +224,40 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFromWithSpender",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -186,11 +288,11 @@
 	},
 	"sources": {
 		"contracts/Token.sol": {
-			"keccak256": "0xd43ac8622fd29962f987c0115f3e5a36be7c5415645c9f70be9d03086ad442ab",
+			"keccak256": "0x2a5019b2132decd962431e0ff704f2e481c07cf6ae60f29a1c898124a7103e54",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://977b19e5370a29cc0732989cfcc9e1f80a2f9f6a0e97152797a89539df0d6bb5",
-				"dweb:/ipfs/QmbFfwJb4zpFPKz7Fc828k1kEnk3SeZNXv4P29KDju5v1t"
+				"bzz-raw://1c8dff46908a18828010bf8cff964c1627874fc1b764438dd177ba694326a35b",
+				"dweb:/ipfs/QmTt6Jo8cJZkyo5MwbdsuXYgQdVY565GbxmLsPA1vmHhxA"
 			]
 		}
 	},

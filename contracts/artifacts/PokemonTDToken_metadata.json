@@ -37,6 +37,72 @@
 				"type": "event"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approveSpenderFromOwner",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approveSpenderSection",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "buy",
 				"outputs": [],
@@ -46,6 +112,62 @@
 			{
 				"inputs": [],
 				"name": "currentBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_useraddress",
+						"type": "address"
+					}
+				],
+				"name": "currentBalanceUser",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					}
+				],
+				"name": "getAllowance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -70,6 +192,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -80,6 +215,19 @@
 				"name": "sell",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -116,9 +264,43 @@
 				"name": "transferSingleTokenToWinner",
 				"outputs": [
 					{
-						"internalType": "bool",
-						"name": "success",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferSingleTokenToWinnerWithSpender",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -153,27 +335,27 @@
 	},
 	"sources": {
 		"contracts/BaseToken.sol": {
-			"keccak256": "0x638ce73d19dd880f961f36163804e0f4bde420392d237c636cf1dce616eca69b",
+			"keccak256": "0x33b5b2d76a189159be010f2c1192c2456814a60fad744e20ac22130fa0970bb0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2da14e4994c34a72788f3a1c7233a4d27209c264ae55d53fd6dcaa9cee3ac755",
-				"dweb:/ipfs/QmeCRYQsvhqQrnXHWH3o8tRpMMYpjwfGXaGenw3fhWAfB6"
+				"bzz-raw://db22208b9d616a6b3c0da7304798b62dded34f924161eb7a09c6d394d9aa06e3",
+				"dweb:/ipfs/QmUjqvhPxidGGetV3chMyS1f8YYWfavozvTmuGV7qRtxV9"
 			]
 		},
 		"contracts/PokemonTDToken.sol": {
-			"keccak256": "0xbd1d3cba6756c2c0cfc22648417a13ed70717d6c64a07ebb14cadb550df02e4c",
+			"keccak256": "0x69affe5a8c692d5df7201dea5ded662eb35a840f5522a586921fbedad03eb056",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cb3ad82e4c758a5883832c89ed3e13b8e2243795799af76c7c2d3c25b094b6fb",
-				"dweb:/ipfs/QmVpinHLGgjFN7Y2VYc9rABASuNBpN5DDiR88FLD54nucL"
+				"bzz-raw://244e86301fede397e94674479a18d29be0d304774195bdbd5210d3ec8992a8ab",
+				"dweb:/ipfs/QmWJAozASGu5BtcGqoHHhgLn2nyMqmbojn8kUtpDh71vCQ"
 			]
 		},
 		"contracts/Token.sol": {
-			"keccak256": "0x480217ef53ae51e4e85976021c9808d8591a6d2e284f188eaea4a5813e1e1ab3",
+			"keccak256": "0x2a5019b2132decd962431e0ff704f2e481c07cf6ae60f29a1c898124a7103e54",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5e684aba0d5fa88ef200cc81ccc0cc735f173703defe1b3fae45749badaf9c07",
-				"dweb:/ipfs/QmUQPZgLSy21BJowT8HaurYHpWAAFpw8H9ViDAFcm5xTpF"
+				"bzz-raw://1c8dff46908a18828010bf8cff964c1627874fc1b764438dd177ba694326a35b",
+				"dweb:/ipfs/QmTt6Jo8cJZkyo5MwbdsuXYgQdVY565GbxmLsPA1vmHhxA"
 			]
 		},
 		"hardhat/console.sol": {

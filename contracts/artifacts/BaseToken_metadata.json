@@ -61,6 +61,32 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "_name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -98,6 +124,35 @@
 					}
 				],
 				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approveSpender",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -278,6 +333,40 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFromWithSpender",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "version",
 				"outputs": [
@@ -293,7 +382,17 @@
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"decimals()": {
+					"details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the default value returned by this function, unless it's overridden. NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
+				},
+				"name()": {
+					"details": "Returns the name of the token."
+				},
+				"symbol()": {
+					"details": "Returns the symbol of the token, usually a shorter version of the name."
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -319,19 +418,19 @@
 	},
 	"sources": {
 		"contracts/BaseToken.sol": {
-			"keccak256": "0x312806a4b2b1a4c2154712ee123cd450ddc36f7415c36360d0fe13ddc02a101d",
+			"keccak256": "0x33b5b2d76a189159be010f2c1192c2456814a60fad744e20ac22130fa0970bb0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d71ad3a13be5a4d6b051afac21c813d50d51f70fe2575618cb56f2e505c331e5",
-				"dweb:/ipfs/QmcHmSmWKRwabbXUWdvhFCJJEJD2FD642USAQ6TQ5PmzQF"
+				"bzz-raw://db22208b9d616a6b3c0da7304798b62dded34f924161eb7a09c6d394d9aa06e3",
+				"dweb:/ipfs/QmUjqvhPxidGGetV3chMyS1f8YYWfavozvTmuGV7qRtxV9"
 			]
 		},
 		"contracts/Token.sol": {
-			"keccak256": "0x480217ef53ae51e4e85976021c9808d8591a6d2e284f188eaea4a5813e1e1ab3",
+			"keccak256": "0x2a5019b2132decd962431e0ff704f2e481c07cf6ae60f29a1c898124a7103e54",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5e684aba0d5fa88ef200cc81ccc0cc735f173703defe1b3fae45749badaf9c07",
-				"dweb:/ipfs/QmUQPZgLSy21BJowT8HaurYHpWAAFpw8H9ViDAFcm5xTpF"
+				"bzz-raw://1c8dff46908a18828010bf8cff964c1627874fc1b764438dd177ba694326a35b",
+				"dweb:/ipfs/QmTt6Jo8cJZkyo5MwbdsuXYgQdVY565GbxmLsPA1vmHhxA"
 			]
 		},
 		"hardhat/console.sol": {
