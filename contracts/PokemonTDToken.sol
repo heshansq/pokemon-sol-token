@@ -6,7 +6,7 @@ import "./BaseToken.sol";
 
 contract PokemonTDToken {
 
-   Token public token;
+    Token public token;
     uint256 uintOfEthCanBuy;
     address payable ownerWallet;
     address ownerWalletN;
@@ -109,14 +109,14 @@ contract PokemonTDToken {
     /*
     * get balance of current user
     */
-    function currentBalance() public returns(uint256 balance) {
+    function currentBalance() public view returns(uint256 balance) {
         return token.balanceOf(msg.sender);
     }
 
     /*
     * get balance of a user
     */
-    function currentBalanceUser(address _useraddress) public returns(uint256 balance) {
+    function currentBalanceUser(address _useraddress) public view returns(uint256 balanceData) {
         return token.balanceOf(_useraddress);
     }
 
@@ -132,8 +132,8 @@ contract PokemonTDToken {
         return token.symbol();
     }
 
-    function balanceOf() public returns(uint256 balance) {
-        return token.balanceOf(msg.sender);
+    function balanceOf(address _owner) public view returns(uint256 _balance) {
+        return token.balanceOf(_owner);
     }
 
 }

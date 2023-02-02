@@ -6,7 +6,7 @@ import "hardhat/console.sol";
 
 contract BaseToken is Token {
 
-   mapping(address => uint) balances;
+    mapping(address => uint) balances;
     mapping(address => mapping(address => uint)) allowed;
     uint256 public totalSupplyVal;
     string public _name;

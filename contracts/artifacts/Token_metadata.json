@@ -98,7 +98,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -288,11 +288,11 @@
 	},
 	"sources": {
 		"contracts/Token.sol": {
-			"keccak256": "0x2a5019b2132decd962431e0ff704f2e481c07cf6ae60f29a1c898124a7103e54",
+			"keccak256": "0x9dce0cd3431c9c801d83beb147b6695c87c25fb9dd8713af4c502a23955ce369",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1c8dff46908a18828010bf8cff964c1627874fc1b764438dd177ba694326a35b",
-				"dweb:/ipfs/QmTt6Jo8cJZkyo5MwbdsuXYgQdVY565GbxmLsPA1vmHhxA"
+				"bzz-raw://282fb6906a6ba49d5ccac7d2a42559bf500797cb2603cca7c1404ed5dcf3dfc9",
+				"dweb:/ipfs/QmRz9gfhmUvEnPgYqqoFkfw4c1eTBbrwRJnEmCq3sFkE1u"
 			]
 		}
 	},
